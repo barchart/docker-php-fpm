@@ -28,4 +28,4 @@ WORKDIR /var/www
 EXPOSE 9000
 
 # Define default command.
-CMD ["/usr/sbin/php5-fpm","-F","-R","-y","/etc/php-fpm.conf"]
+CMD ["/usr/sbin/php5-fpm","-F","-R"]
