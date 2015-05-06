@@ -14,7 +14,8 @@ RUN apt-get -y update && \
 	pear install Mail_Mime Archive_Tar Auth Auth_SASL Console_Getopt Date mail Mail_mimeDecode Net_SMTP XML_RPC && \
 	pecl install trader igbinary && \
 	apt-get clean && \
-	rm -rf /tmp/*
+	rm -rf /tmp/* && \
+	php5enmod mcrypt
 
 ADD etc/ /etc/
 
